@@ -27,13 +27,13 @@ ol, ul {
   list-style: none;
 }
 
-.clearfix:after, .h-basket:after, .h-search:after, .h-blackline:after {
+.clearfix:after, .h-basket:after, .h-search:after, .h-blackline:after, .p-reviews:after, .p-reviews__top:after {
   content: '';
   display: table;
   clear: both;
 }
 
-.clearfix:before, .h-basket:before, .h-search:before, .h-blackline:before {
+.clearfix:before, .h-basket:before, .h-search:before, .h-blackline:before, .p-reviews:before, .p-reviews__top:before {
   content: '';
   display: table;
 }
@@ -105,6 +105,10 @@ body {
   padding: 14px 0;
 }
 
+.page {
+  padding-bottom: 55px;
+}
+
 .page__category {
   padding-top: 30px;
 }
@@ -117,6 +121,11 @@ body {
 .page__oc-slider {
   border-bottom: 4px solid #ebebeb;
   padding-bottom: 30px;
+}
+
+.footer {
+  background-color: #f6f5f3;
+  padding: 34px 0;
 }
 
 .h-info {
@@ -323,6 +332,8 @@ body {
 
 .h-nav {
   font-size: 0;
+  height: 56px;
+  overflow: hidden;
 }
 
 .h-nav__item {
@@ -531,6 +542,7 @@ body {
 
 .p-prod__img {
   border: 4px solid #fff;
+  height: 239px;
 }
 
 .p-prod__img img {
@@ -682,4 +694,203 @@ body {
 .oc-slider .slick-next {
   right: 0;
   background-image: url(../img/icon/right-arrow.png);
+}
+
+.p-reviews {
+  padding-left: 192px;
+  position: relative;
+  min-height: 167px;
+}
+
+.p-reviews__img {
+  float: left;
+  border: 4px solid #ebebeb;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.p-reviews__img img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.p-reviews__top {
+  width: 100%;
+}
+
+.p-reviews__top-data {
+  width: 50%;
+  float: left;
+  text-align: left;
+}
+
+.p-reviews__top-data span {
+  font-size: 14px;
+  color: #3b3b3b;
+  font-family: "OpenSansSemiBold", sans-serif;
+  line-height: 24px;
+  display: inline-block;
+  letter-spacing: 0.5px;
+}
+
+.p-reviews__top-name {
+  text-align: right;
+  float: right;
+  width: 50%;
+}
+
+.p-reviews__top-name span {
+  font-size: 14px;
+  color: #3b3b3b;
+  font-family: "OpenSansSemiBold", sans-serif;
+  line-height: 24px;
+  display: inline-block;
+  letter-spacing: 0.5px;
+}
+
+.p-reviews__bottom {
+  padding-top: 10px;
+}
+
+.p-reviews__bottom p {
+  font-size: 14px;
+  color: #3b3b3b;
+  line-height: 24px;
+  display: inline-block;
+  letter-spacing: 0.5px;
+}
+
+.pb-reviews__button {
+  text-align: right;
+  padding-top: 10px;
+}
+
+.pb-reviews__button a {
+  display: inline-block;
+  text-transform: uppercase;
+  color: #000;
+  font-size: 14px;
+  line-height: 24px;
+  text-decoration: none;
+  border-bottom: 1px dotted #000;
+  padding: 0 5px;
+}
+
+.pb-reviews__button a:hover {
+  border-color: transparent;
+}
+
+.pb-reviews__button a:focus, .pb-reviews__button a:active {
+  text-decoration: none;
+  color: #000;
+}
+
+.f-copy p {
+  display: block;
+  color: #3b3b3b;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.f-nav {
+  margin-top: -6px;
+}
+
+.f-nav__title {
+  text-align: left;
+}
+
+.f-nav__title b {
+  display: inline-block;
+  text-transform: uppercase;
+  color: #3b3b3b;
+  font-family: "OpenSansSemiBold", sans-serif;
+  line-height: 36px;
+  font-size: 14px;
+}
+
+.f-nav__link {
+  font-size: 14px;
+  line-height: 36px;
+  color: #3b3b3b;
+}
+
+.f-nav__link:hover {
+  color: #3b3b3b;
+  text-decoration: underline;
+}
+
+.f-nav__link:focus, .f-nav__link:active {
+  color: #3b3b3b;
+  text-decoration: none;
+}
+
+.f-contact__adr {
+  padding-top: 6px;
+}
+
+.f-contact__adr p {
+  color: #3b3b3b;
+  font-size: 14px;
+  line-height: 24px;
+  display: inline-block;
+}
+
+.f-contact__adr span {
+  display: inline-block;
+  color: #3b3b3b;
+  font-size: 14px;
+  line-height: 36px;
+}
+
+.f-contact__link {
+  display: inline-block;
+  text-decoration: underline;
+  color: #3b3b3b;
+  font-size: 14px;
+  line-height: 36px;
+}
+
+.f-contact__link:hover {
+  text-decoration: none;
+  color: #3b3b3b;
+}
+
+.f-contact__link:focus, .f-contact__link:active {
+  color: #3b3b3b;
+  text-decoration: underline;
+}
+
+.f-contact__tel {
+  text-decoration: none;
+  color: #3b3b3b;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.f-contact__tel:hover, .f-contact__tel:focus, .f-contact__tel:active {
+  color: #3b3b3b;
+  text-decoration: none;
+}
+
+.f-contact__soc {
+  font-size: 0;
+  padding-top: 10px;
+}
+
+.f-contact__soc-item {
+  display: inline-block;
+  padding-left: 14px;
+}
+
+.f-contact__soc-item:first-child {
+  padding-left: 0;
+}
+
+.f-contact__soc-link {
+  width: 25px;
+  height: 25px;
+  display: block;
 }
