@@ -6,6 +6,14 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
+  .header {
+    height: auto;
+    position: static;
+    overflow: visible;
+  }
+  .header__blackline {
+    position: static;
+  }
   .h-nav {
     display: none;
   }
